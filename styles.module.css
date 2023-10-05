@@ -1,0 +1,34 @@
+:root {
+  --main-bg-color: #13366b;
+  --my-bg-secondary: rgba(36, 74, 131, 0.5);
+  --my-bg-thirdary: #0d2850;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+.my-bg-secondary {
+  background-color: var(--my-bg-secondary);
+}
+
+.my-bg-thirdary {
+  background-color: var(--my-bg-thirdary);
+}
+
+.form-control:focus {
+  background-color: var(--my-bg-thirdary);
+}
+
+.form-control::placeholder {
+  color: #9d9d9d;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
