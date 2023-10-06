@@ -11,6 +11,15 @@ body {
   height: 100vh;
 }
 
+textarea {
+  resize: none;
+}
+
+.btn-close {
+  filter: invert(100%) sepia(34%) saturate(3%) hue-rotate(194deg)
+    brightness(113%) contrast(90%);
+}
+
 .my-bg-secondary {
   background-color: var(--my-bg-secondary);
 }

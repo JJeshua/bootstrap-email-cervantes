@@ -120,7 +120,7 @@
             <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn my-bg-secondary text-light p-3 align-self-end"
+              class="btn bg-primary text-light p-3 align-self-end"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
@@ -141,7 +141,7 @@
                 <div class="modal-content my-bg-modal text-light">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
-                      Modal title
+                      New Message
                     </h5>
                     <button
                       type="button"
@@ -151,12 +151,30 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
-                    rerum delectus, iste quas repellendus aspernatur perferendis
-                    ut, mollitia amet fugiat minus deleniti? Illum distinctio
-                    dolorem magnam assumenda esse, temporibus itaque sed
-                    voluptatibus rem, tenetur vel, doloribus fugit similique
-                    error placeat?
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="new_message_recipient_input"
+                        id="new_message_recipient_input"
+                        placeholder="To: "
+                        class="form-control my-bg-secondary text-light border-0 mb-1"
+                      />
+                      <input
+                        type="text"
+                        name="new_message_subject"
+                        id="new_message_subject"
+                        placeholder="Subject: "
+                        class="form-control my-bg-secondary text-light border-0 mb-3"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <textarea
+                        name="new_message_content"
+                        id="new_message_content"
+                        rows="20"
+                        class="form-control my-bg-secondary border-0 text-light"
+                      ></textarea>
+                    </div>
                   </div>
                   <div class="modal-footer">
                     <button
