@@ -126,7 +126,7 @@
               Compose
             </button>
 
-            <!-- Modal -->
+            <!-- Compose message modal -->
             <div
               class="modal fade"
               id="exampleModal"
@@ -136,7 +136,7 @@
               data-bs-backdrop="static"
               data-bs-keyboard="false"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-fullscreen-sm-down">
                 <div class="modal-content my-bg-modal text-light">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
@@ -186,6 +186,87 @@
                     <button type="button" class="btn btn-primary p-3">
                       Send
                     </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- View message modal -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn bg-primary text-light p-3 align-self-end"
+              data-bs-toggle="modal"
+              data-bs-target="#viewMessageModal"
+            >
+              View Msg (Ex)
+            </button>
+
+            <div
+              class="modal fade"
+              id="viewMessageModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+            >
+              <div class="modal-dialog modal-fullscreen-sm-down">
+                <div class="modal-content my-bg-modal text-light">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      View Message
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body h-75">
+                    <div class="my-bg-secondary p-3 rounded-1 mb-1">
+                      <div
+                        class="message-view-header d-flex gap-3 align-items-center"
+                      >
+                        <img
+                          src="./assets/icons/person.png"
+                          alt=""
+                          class="icon-big"
+                        />
+                        <p class="m-0">
+                          <span class="text-preview">From: </span>so and so<br /><span
+                            class="text-preview"
+                            >Subject: </span
+                          >fsdklafjasdklf
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="message-view-body my-bg-secondary p-3 rounded-1"
+                    >
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Qui temporibus magni cupiditate quis eaque et nihil totam
+                      consectetur sit beatae veritatis aliquam accusamus enim ad
+                      molestias, minima molestiae iste. Harum at tenetur aut
+                      labore! Et aut corporis assumenda, laudantium possimus
+                      quam maiores dolores hic, laborum eveniet excepturi fugiat
+                      enim doloribus!
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <div
+                      class="message-view-quick-actions d-flex gap-3 justify-content-end"
+                    >
+                      <button type="button" class="btn btn-primary p-3">
+                        Reply</button
+                      ><button type="button" class="btn btn-primary">
+                        Forward</button
+                      ><button type="button" class="btn btn-primary">
+                        Flag</button
+                      ><button type="button" class="btn btn-primary">
+                        Archive
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
