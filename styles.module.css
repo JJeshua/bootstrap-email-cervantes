@@ -54,6 +54,10 @@ textarea {
   transform: rotate(90deg);
 }
 
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
 .text-preview {
   color: var(--text-preview);
 }
