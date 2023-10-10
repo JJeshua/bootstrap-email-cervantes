@@ -1,20 +1,24 @@
 :root[data-theme='light'] {
-  --text: #020303;
-  --background: #f9fbfb;
-  --primary: #633b41;
-  --secondary: #d9e8e6;
-  --accent: #995c64;
+  --text: #021831;
+  --background: #e1eefe;
+  --primary: #5da6f8;
+  --secondary: #9dc9fb;
+  --accent: #0860c4;
   --static-3: rgba(0, 0, 0, 0.03);
   --static-10: rgba(0, 0, 0, 0.1);
+  --icon-colorize: invert(91%) sepia(29%) saturate(533%) hue-rotate(131deg)
+    brightness(100%) contrast(99%);
 }
 :root[data-theme='dark'] {
-  --text: #fcfdfd;
-  --background: #040606;
-  --primary: #c49ca2;
-  --secondary: #172624;
-  --accent: #a3666e;
+  --text: #cee4fd;
+  --background: #010e1e;
+  --primary: #074fa2;
+  --secondary: #043062;
+  --accent: #3b93f7;
   --static-3: rgba(255, 255, 255, 0.03);
   --static-10: rgba(255, 255, 255, 0.1);
+  --icon-colorize: invert(0%) sepia(3%) saturate(35%) hue-rotate(203deg)
+    brightness(115%) contrast(90%);
 }
 
 body {
@@ -74,9 +78,14 @@ textarea {
   width: 20px;
   height: 20px;
 }
+
 .icon-big {
   width: 50px;
   height: 50px;
+}
+
+.icon-colorize {
+  filter: var(--icon-colorize);
 }
 
 .rotate-90 {
