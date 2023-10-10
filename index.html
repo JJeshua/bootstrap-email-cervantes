@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="styles.module.css" />
     <!-- Main stylesheet import (end) -->
   </head>
-  <body>
+  <body class="background">
     <div class="container-xxl h-100">
       <div class="row h-100 column-gap-2 row-cols-md-2 row-cols-lg-3 p-3">
         <!-- Left nav bar -->
@@ -36,7 +36,7 @@
           <form class="p-0 mb-4">
             <input
               type="text"
-              class="p-2 form-control my-bg-thirdary text-light border-0"
+              class="p-2 form-control secondary text border-0"
               placeholder="Search"
             />
           </form>
@@ -45,7 +45,7 @@
           >
             <!-- Inbox Selector (inbox) -->
             <div
-              class="my-bg-secondary p-3 rounded-1 d-flex justify-content-between align-items-center"
+              class="static-3 p-3 rounded-1 d-flex justify-content-between align-items-center"
             >
               <div
                 class="d-flex justify-content-between align-items-center gap-3"
@@ -55,7 +55,7 @@
                   alt=""
                   class="icon"
                 />
-                <span class="text-light">Inbox</span>
+                <span class="text">Inbox</span>
               </div>
               <img
                 src="./assets/icons/collapse_arrow.svg"
@@ -65,7 +65,7 @@
             </div>
             <!-- Inbox Selector (read) -->
             <div
-              class="my-bg-secondary p-3 rounded-1 d-flex justify-content-between align-items-center"
+              class="static-3 p-3 rounded-1 d-flex justify-content-between align-items-center"
             >
               <div
                 class="d-flex justify-content-between align-items-center gap-3"
@@ -75,7 +75,7 @@
                   alt=""
                   class="icon"
                 />
-                <span class="text-light">Read</span>
+                <span class="text">Read</span>
               </div>
               <img
                 src="./assets/icons/collapse_arrow.svg"
@@ -85,13 +85,13 @@
             </div>
             <!-- Inbox Selector (sent) -->
             <div
-              class="my-bg-secondary p-3 rounded-1 d-flex justify-content-between align-items-center"
+              class="static-3 p-3 rounded-1 d-flex justify-content-between align-items-center"
             >
               <div
                 class="d-flex justify-content-between align-items-center gap-3"
               >
                 <img src="./assets/icons/paper_plane.svg" alt="" class="icon" />
-                <span class="text-light">Sent</span>
+                <span class="text">Sent</span>
               </div>
               <img
                 src="./assets/icons/collapse_arrow.svg"
@@ -101,13 +101,13 @@
             </div>
             <!-- Inbox Selector (archived) -->
             <div
-              class="my-bg-secondary p-3 rounded-1 d-flex justify-content-between align-items-center"
+              class="static-3 p-3 rounded-1 d-flex justify-content-between align-items-center"
             >
               <div
                 class="d-flex justify-content-between align-items-center gap-3"
               >
                 <img src="./assets/icons/dossier.svg" alt="" class="icon" />
-                <span class="text-light">Archvied</span>
+                <span class="text">Archvied</span>
               </div>
               <img
                 src="./assets/icons/collapse_arrow.svg"
@@ -119,7 +119,7 @@
             <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn bg-primary text-light p-3 align-self-end"
+              class="btn primary text p-3 align-self-end"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
@@ -137,7 +137,7 @@
               data-bs-keyboard="false"
             >
               <div class="modal-dialog modal-fullscreen-sm-down">
-                <div class="modal-content my-bg-modal text-light">
+                <div class="modal-content background text">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
                       New Message
@@ -156,14 +156,14 @@
                         name="new_message_recipient_input"
                         id="new_message_recipient_input"
                         placeholder="To: "
-                        class="form-control my-bg-secondary text-light border-0 mb-1"
+                        class="form-control static-3 text border-0 mb-1"
                       />
                       <input
                         type="text"
                         name="new_message_subject"
                         id="new_message_subject"
                         placeholder="Subject: "
-                        class="form-control my-bg-secondary text-light border-0 mb-3"
+                        class="form-control static-3 text border-0 mb-3"
                       />
                     </div>
                     <div class="form-group">
@@ -171,19 +171,19 @@
                         name="new_message_content"
                         id="new_message_content"
                         rows="20"
-                        class="form-control my-bg-secondary border-0 text-light"
+                        class="form-control static-10 text border-0"
                       ></textarea>
                     </div>
                   </div>
                   <div class="modal-footer">
                     <button
                       type="button"
-                      class="btn btn-secondary p-3"
+                      class="btn secondary text p-3"
                       data-bs-dismiss="modal"
                     >
                       Cancel
                     </button>
-                    <button type="button" class="btn btn-primary p-3">
+                    <button type="button" class="btn primary text p-3">
                       Send
                     </button>
                   </div>
@@ -194,7 +194,7 @@
             <!-- Button trigger modal -->
             <button
               type="button"
-              class="btn bg-primary text-light p-3 align-self-end"
+              class="btn secondary text p-3 align-self-end"
               data-bs-toggle="modal"
               data-bs-target="#viewMessageModal"
             >
@@ -211,7 +211,7 @@
               data-bs-keyboard="false"
             >
               <div class="modal-dialog modal-fullscreen-sm-down">
-                <div class="modal-content my-bg-modal text-light">
+                <div class="modal-content background text">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">
                       View Message
@@ -224,7 +224,7 @@
                     ></button>
                   </div>
                   <div class="modal-body h-75">
-                    <div class="my-bg-secondary p-3 rounded-1 mb-1">
+                    <div class="static-3 p-3 rounded-1 mb-1">
                       <div
                         class="message-view-header d-flex gap-3 align-items-center"
                       >
@@ -241,9 +241,7 @@
                         </p>
                       </div>
                     </div>
-                    <div
-                      class="message-view-body my-bg-secondary p-3 rounded-1"
-                    >
+                    <div class="message-view-body static-10 p-3 rounded-1">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Qui temporibus magni cupiditate quis eaque et nihil totam
                       consectetur sit beatae veritatis aliquam accusamus enim ad
@@ -257,13 +255,13 @@
                     <div
                       class="message-view-quick-actions d-flex gap-3 justify-content-end"
                     >
-                      <button type="button" class="btn btn-primary p-3">
+                      <button type="button" class="btn primary p-3 text">
                         Reply</button
-                      ><button type="button" class="btn btn-primary">
+                      ><button type="button" class="btn primary p-3 text">
                         Forward</button
-                      ><button type="button" class="btn btn-primary">
+                      ><button type="button" class="btn primary p-3 text">
                         Flag</button
-                      ><button type="button" class="btn btn-primary">
+                      ><button type="button" class="btn primary p-3 text">
                         Archive
                       </button>
                     </div>
@@ -274,9 +272,13 @@
           </div>
         </div>
         <!-- Email list right (for >= md)-->
-        <div class="col rounded-1 d-none d-md-block flex-md-grow-1 flex-lg-grow-0 col-lg-3 bg-dark"></div>
+        <div
+          class="col rounded-1 d-none d-md-block flex-md-grow-1 flex-lg-grow-0 col-lg-3 static-3"
+        ></div>
         <!-- Email preview (for >= lg) -->
-        <div class="col rounded-1 d-none d-lg-block flex-grow-1 bg-body-secondary"></div>
+        <div
+          class="col rounded-1 d-none d-lg-block flex-grow-1 static-10"
+        ></div>
       </div>
     </div>
     <!-- Bootstrap JS Import (start) -->

@@ -1,15 +1,55 @@
+/* :root {
+  --text: #052729;
+  --background: #d2f7f9;
+  --primary: #58e2e9;
+  --secondary: #e8fbfc;
+  --accent: #34dce5;
+} */
+
 :root {
-  --main-bg-color: #13366b;
-  --my-bg-secondary: rgba(36, 74, 131, 0.5);
-  --my-bg-thirdary: #0d2850;
-  --my-bg-sidenav: rgba(0, 35, 88, 0.63);
-  --my-bg-modal: rgba(0, 35, 88, 1);
-  --text-preview: rgb(157, 157, 157);
+  --text: #d6f8fa;
+  --background: #062b2d;
+  --primary: #16a0a7;
+  --secondary: #031617;
+  --accent: #1ac2cb;
+  --static-3: rgba(255, 255, 255, 0.03);
+  --static-10: rgba(255, 255, 255, 0.1);
 }
 
 body {
-  background-color: var(--main-bg-color);
   height: 100vh;
+}
+
+.text {
+  color: var(--text);
+}
+
+.background {
+  background: var(--background);
+}
+
+.primary {
+  background: var(--primary);
+}
+
+.secondary {
+  background: var(--secondary);
+}
+
+.accent {
+  background: var(--accent);
+}
+
+.static-3 {
+  background: var(--static-3);
+}
+
+.static-10 {
+  background: var(--static-10);
+}
+
+.text-suttle {
+  opacity: 50%;
 }
 
 textarea {
@@ -19,18 +59,6 @@ textarea {
 .btn-close {
   filter: invert(100%) sepia(34%) saturate(3%) hue-rotate(194deg)
     brightness(113%) contrast(90%);
-}
-
-.my-bg-secondary {
-  background-color: var(--my-bg-secondary);
-}
-
-.my-bg-thirdary {
-  background-color: var(--my-bg-thirdary);
-}
-
-.my-bg-modal {
-  background-color: var(--my-bg-modal);
 }
 
 .form-control:focus {
@@ -56,10 +84,6 @@ textarea {
 
 .rotate-180 {
   transform: rotate(180deg);
-}
-
-.text-preview {
-  color: var(--text-preview);
 }
 
 .message-view-body {
