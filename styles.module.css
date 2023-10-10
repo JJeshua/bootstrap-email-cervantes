@@ -1,17 +1,18 @@
-/* :root {
-  --text: #052729;
-  --background: #d2f7f9;
-  --primary: #58e2e9;
-  --secondary: #e8fbfc;
-  --accent: #34dce5;
-} */
-
-:root {
-  --text: #d6f8fa;
-  --background: #062b2d;
-  --primary: #16a0a7;
-  --secondary: #031617;
-  --accent: #1ac2cb;
+:root[data-theme='light'] {
+  --text: #020303;
+  --background: #f9fbfb;
+  --primary: #633b41;
+  --secondary: #d9e8e6;
+  --accent: #995c64;
+  --static-3: rgba(0, 0, 0, 0.03);
+  --static-10: rgba(0, 0, 0, 0.1);
+}
+:root[data-theme='dark'] {
+  --text: #fcfdfd;
+  --background: #040606;
+  --primary: #c49ca2;
+  --secondary: #172624;
+  --accent: #a3666e;
   --static-3: rgba(255, 255, 255, 0.03);
   --static-10: rgba(255, 255, 255, 0.1);
 }
