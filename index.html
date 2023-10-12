@@ -33,16 +33,28 @@
         <!-- Left nav bar -->
         <div class="col col-md-4 col-lg-2 p-0">
           <!-- Search bar -->
-          <form class="p-0 mb-4">
+          <form class="p-0 mb-4 d-sm-block d-md-none">
             <input
               type="text"
               class="p-2 form-control static-3 text border-0"
               placeholder="Search"
             />
           </form>
+
           <div
-            class="navigation-items-container d-flex flex-column gap-3 h-100"
+            class="navigation-items-container d-flex flex-column gap-2 h-100"
           >
+            <!-- Profile Icon -->
+
+            <div class="d-none d-md-flex align-items-center gap-3">
+              <img
+                src="./assets/icons/person.png"
+                alt=""
+                class="icon-big icon-colorize"
+              />
+              <p class="text m-0">Welcome, User!</p>
+            </div>
+
             <!-- Inbox Selector (inbox) -->
             <div
               class="static-3 p-3 rounded-1 d-flex justify-content-between align-items-center"
@@ -179,7 +191,7 @@
                         name="new_message_content"
                         id="new_message_content"
                         rows="20"
-                        class="form-control static-10 text border-0"
+                        class="form-control static-3 text border-0"
                       ></textarea>
                     </div>
                   </div>
@@ -249,7 +261,7 @@
                         </p>
                       </div>
                     </div>
-                    <div class="message-view-body static-10 p-3 rounded-1">
+                    <div class="message-view-body static-3 p-3 rounded-1">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Qui temporibus magni cupiditate quis eaque et nihil totam
                       consectetur sit beatae veritatis aliquam accusamus enim ad
@@ -281,12 +293,119 @@
         </div>
         <!-- Email list right (for >= md)-->
         <div
-          class="col rounded-1 d-none d-md-block flex-md-grow-1 flex-lg-grow-0 col-lg-3 static-3"
-        ></div>
+          class="col rounded-1 d-none d-md-flex flex-column gap-2 flex-md-grow-1 flex-lg-grow-0 col-lg-4 static-3 p-3 h-100"
+        >
+          <!-- Search bar -->
+          <form class="p-0 d-none d-md-block">
+            <input
+              type="text"
+              class="p-2 form-control static-3 text border-0"
+              placeholder="Search"
+            />
+          </form>
+          <div class="email-list-item static-3 p-3 rounded-1">
+            <div class="d-flex gap-3">
+              <img
+                src="./assets/icons/person.png"
+                alt=""
+                class="icon-big icon-colorize"
+              />
+              <p class="m-0 text">Sender Name<br />Subject</p>
+            </div>
+            <p class="m-0 text text-truncate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam sed tempore accusamus cumque nisi?
+            </p>
+          </div>
+          <div class="email-list-item static-3 p-3 rounded-1">
+            <div class="d-flex gap-3">
+              <img
+                src="./assets/icons/person.png"
+                alt=""
+                class="icon-big icon-colorize"
+              />
+              <p class="m-0 text">Sender Name<br />Subject</p>
+            </div>
+            <p class="m-0 text text-truncate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam sed tempore accusamus cumque nisi?
+            </p>
+          </div>
+          <div class="email-list-item static-3 p-3 rounded-1">
+            <div class="d-flex gap-3">
+              <img
+                src="./assets/icons/person.png"
+                alt=""
+                class="icon-big icon-colorize"
+              />
+              <p class="m-0 text">Sender Name<br />Subject</p>
+            </div>
+            <p class="m-0 text text-truncate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam sed tempore accusamus cumque nisi?
+            </p>
+          </div>
+          <div class="email-list-item static-3 p-3 rounded-1">
+            <div class="d-flex gap-3">
+              <img
+                src="./assets/icons/person.png"
+                alt=""
+                class="icon-big icon-colorize"
+              />
+              <p class="m-0 text">Sender Name<br />Subject</p>
+            </div>
+            <p class="m-0 text text-truncate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam sed tempore accusamus cumque nisi?
+            </p>
+          </div>
+          <div class="email-list-item static-3 p-3 rounded-1">
+            <div class="d-flex gap-3">
+              <img
+                src="./assets/icons/person.png"
+                alt=""
+                class="icon-big icon-colorize"
+              />
+              <p class="m-0 text">Sender Name<br />Subject</p>
+            </div>
+            <p class="m-0 text text-truncate">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              totam sed tempore accusamus cumque nisi?
+            </p>
+          </div>
+        </div>
         <!-- Email preview (for >= lg) -->
         <div
-          class="col rounded-1 d-none d-lg-block flex-grow-1 static-10"
-        ></div>
+          class="col rounded-1 d-none d-lg-flex flex-column gap-1 flex-grow-1 static-3 p-3"
+        >
+          <div class="email-list-item static-3 p-3 rounded-1">
+            <div class="d-flex gap-3">
+              <img
+                src="./assets/icons/person.png"
+                alt=""
+                class="icon-big icon-colorize"
+              />
+              <p class="m-0 text">From: Sender Name<br />Subject: Subject</p>
+            </div>
+          </div>
+          <div class="email-content rounded-1 p-3 static-3 text flex-grow-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            dolore, exercitationem culpa aperiam perspiciatis reiciendis totam
+            sequi perferendis autem dignissimos adipisci necessitatibus
+            deleniti? Facilis sapiente, cumque dolorem temporibus minus odit
+            exercitationem quod dolores velit incidunt praesentium ullam
+            delectus nihil beatae? Modi, laborum! Quaerat at nobis non ducimus
+            pariatur quis iste.
+          </div>
+          <div
+            class="message-view-quick-actions d-flex gap-3 justify-content-end"
+          >
+            <button type="button" class="btn primary p-3 text">Reply</button
+            ><button type="button" class="btn primary p-3 text">Forward</button
+            ><button type="button" class="btn primary p-3 text">Flag</button
+            ><button type="button" class="btn primary p-3 text">Archive</button>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Bootstrap JS Import (start) -->
