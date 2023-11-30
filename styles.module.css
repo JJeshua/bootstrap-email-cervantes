@@ -1,19 +1,17 @@
 :root[data-theme='light'] {
   --text: #021831;
   --background: #e1eefe;
-  --background-opposite: #010e1e;
   --primary: #5da6f8;
   --secondary: #9dc9fb;
   --accent: #0860c4;
   --static-3: rgba(0, 0, 0, 0.05);
-  --static-10: rgba(0, 0, 0, 0.10);
+  --static-10: rgba(0, 0, 0, 0.1);
   --icon-colorize: invert(91%) sepia(29%) saturate(533%) hue-rotate(131deg)
     brightness(100%) contrast(99%);
 }
 :root[data-theme='dark'] {
   --text: #cee4fd;
   --background: #010e1e;
-  --background-opposite: #e1eefe;
   --primary: #074fa2;
   --secondary: #043062;
   --accent: #3b93f7;
@@ -33,10 +31,6 @@ body {
 
 .background {
   background: var(--background);
-}
-
-.background-opposite {
-  background: var(--background-opposite);
 }
 
 .primary {
