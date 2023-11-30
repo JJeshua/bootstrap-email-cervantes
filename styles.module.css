@@ -1,6 +1,7 @@
 :root[data-theme='light'] {
   --text: #021831;
   --background: #e1eefe;
+  --background-opposite: #010e1e;
   --primary: #5da6f8;
   --secondary: #9dc9fb;
   --accent: #0860c4;
@@ -12,6 +13,7 @@
 :root[data-theme='dark'] {
   --text: #cee4fd;
   --background: #010e1e;
+  --background-opposite: #e1eefe;
   --primary: #074fa2;
   --secondary: #043062;
   --accent: #3b93f7;
@@ -31,6 +33,10 @@ body {
 
 .background {
   background: var(--background);
+}
+
+.background-opposite {
+  background: var(--background-opposite);
 }
 
 .primary {
@@ -98,4 +104,10 @@ textarea {
 
 .message-view-body {
   min-height: 500px;
+}
+
+#dark-mode-toggler-button {
+  top: 90%;
+  width: fit-content;
+  position: absolute;
 }
