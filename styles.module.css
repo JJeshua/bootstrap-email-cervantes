@@ -5,8 +5,8 @@
   --primary: #5da6f8;
   --secondary: #9dc9fb;
   --accent: #0860c4;
-  --static-3: rgba(0, 0, 0, 0.03);
-  --static-10: rgba(0, 0, 0, 0.1);
+  --static-3: rgba(0, 0, 0, 0.05);
+  --static-10: rgba(0, 0, 0, 0.10);
   --icon-colorize: invert(91%) sepia(29%) saturate(533%) hue-rotate(131deg)
     brightness(100%) contrast(99%);
 }
